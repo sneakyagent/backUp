@@ -3,57 +3,9 @@ public abstract class Entity
 {
 private int health;
 private int actionPoints;
-int x;
- int y; 
+private int x;
+private int y; 
 private String name;
-private int dmg;
-
-
-public void draw(Screen screen)
-{
-	char [] [] array = screen.getPixels ( );
-	array [x] [y]= 'E';
-	
-}
-
-/**
- * @return the actionPoints
- */
-public int getActionPoints( )
-{
-	return actionPoints;
-}
-/**
- * @param actionPoints the actionPoints to set
- */
-public void setActionPoints( int actionPoints )
-{
-	this.actionPoints = actionPoints;
-}
-/**
- * @return the dmg
- */
-public int getDmg( )
-{
-	return dmg;
-}
-/**
- * @param dmg the dmg to set
- */
-public void setDmg( int dmg )
-{
-	this.dmg = dmg;
-}
-public Entity(int health, int actionPoints, int x, int y, String name, int dmg)
-{
-	super ( );
-	this.health = health;
-	this.actionPoints = actionPoints;
-	this.x = x;
-	this.y = y;
-	this.name = name;
-	this.dmg = dmg;
-}
 /**
  * @return the health
  */
@@ -127,11 +79,11 @@ public void setName( String name )
 public Entity()
 {
 	super ( );
-	  health= -1;
-	  actionPoints=-1;
-	  x=-1;
-	  y=-1; 
-	 name= " ";
+	 int health= -1;
+	 int actionPotins=-1;
+	 int x=-1;
+	 int y=-1; 
+	 String name= null;
 	
 	
 }
